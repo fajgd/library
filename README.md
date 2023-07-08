@@ -1,2 +1,2 @@
-# rsschool-cv
+https://fajgd.github.io/rsschool-cv/
  
