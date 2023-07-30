@@ -5,87 +5,244 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico">
-    <title>My CV</title>
+    <title>Brooklyn</title>
    
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS FILE -->
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
     </head>
-   
+
     <body>
-   
+
         <div class="wrapper">
             <header class="header">
                 <div class="header__container _container">
-                    <div class="header__logo">
-                        <img src="img_max.jpg" alt="header-logo">
-                    </div>
-                    <div class="header_burger">
-                        <span></span>
-                    </div>
+                    <h2 class="header__title">Brooklyn Public Library</h2>
                     <nav class="header__menu menu-block">
                         <ul class="menu-block__list">
                             <li class="menu-block__item">
-                                <a href="#about" class="menu-block__link link_1">About Me</a>
+                                <a href="#about" class="menu-block__link">About</a>
                             </li>
                             <li class="menu-block__item">
-                                <a href="#skills" class="menu-block__link link_2">My Skills</a>
+                                <a href="#favorites" class="menu-block__link">Favorites</a>
                             </li>
                             <li class="menu-block__item">
-                                <a href="#code" class="menu-block__link link_3">Code sample</a>
+                                <a href="#shop" class="menu-block__link">Coffee shop</a>
                             </li>
                             <li class="menu-block__item">
-                                <a href="#contact" class="menu-block__link link_4">Contact</a>
+                                <a href="#contact" class="menu-block__link">Contacts</a>
+                            </li>
+                            <li class="menu-block__item">
+                                <a href="#card" class="menu-block__link">Library Card</a>
                             </li>
                         </ul>
+                        <img src="/profile-img.svg" alt="profile-img">
                     </nav>
                 </div>
             </header>
             <main class="page">
-                <section class="page__about about">
+                <section class="page__welcome welcome">
+                    <div class="welcome__container _container">
+                        <div class="welcome__content">
+                            Welcome <br> to the Brooklyn <br> Library
+                        </div>
+                    </div>
+                    <div class="_ibg">
+                        <img src="logo-background.png" alt="logo-background">
+                    </div>
+                </section>
+                <section id="about" class="page__about about">
                     <div class="about__container _container">
-                        <div class="about__body">
-                            <h1 class="general__title">My Cv</h1>
-                            <h2 id="about" class="about__title main__title">About Me:</h2>
-                            <p class="about__subtitle main__subtitle">My full name is Aliatnsevich Maksim Dzmitrievic. I’m 16 and I was born in Belarus, currently in Georgia. Into design, books and sport. Open to new expirence and challenges all the time.</p>    
+                        <div class="about__text-block text-block">
+                            <h3 class="text-block__title">About</h3>
+                            <p class="text-block__subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+                        </div>
+                        <div class="image-slider swiper">
+                            <div class="image-slider__wrapper swiper-wrapper">
+                                <div class="image-slider__slider swiper-slide">
+                                    <div class="image-slider__item">
+                                        <img src="slider-img1.jpg" alt="slider-img1">
+                                    </div>
+                                </div>
+                                <div class="image-slider__slider swiper-slide">
+                                    <div class="image-slider__item">
+                                        <img src="slider-img2.jpg" alt="slider-img2">
+                                    </div>
+                                </div>
+                                <div class="image-slider__slider swiper-slide">
+                                    <div class="image-slider__item">
+                                        <img src="slider-img3.jpg" alt="slider-img3">
+                                    </div>
+                                </div>
+                                <div class="image-slider__slider swiper-slide">
+                                    <div class="image-slider__item">
+                                        <img src="slider-img4.jpg" alt="slider-img1">
+                                    </div>
+                                </div>
+                                <div class="image-slider__slider swiper-slide">
+                                    <div class="image-slider__item">
+                                        <img src="slider-img5.jpg" alt="slider-img2">
+                                    </div>
+                                </div>
+                                <div class="image-slider__slider swiper-slide">
+                                    <div class="image-slider__item">
+                                        <img src="img/slider-img1.jpg" alt="slider-img3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                    
                         </div>
                     </div>
                 </section>
-                <section class="page__skills skills">
-                    <div class="skills__container _container">
-                        <div class="skills__body">
-                            <h2 id="skills" class="skills__title main__title">My Skills:</h2>
-                            <div class="skills__cards cards-skills">
-                                <div class="cards-skills__block">
-                                    <div class="cards-skills__column">
-                                        <div class="cards-skills__item">
-                                            <div class="cards-skills__content _html">HTML</div>
-                                            <h4 class="cards-skills__title">HTML5</h4>
-                                            <p class="cards-skills__subtitle">1.5+ year</p>
+                <section id="favorites" class="page__favorites favorites">
+                    <div class="favorites__container _container">
+                        <div class="favorites__text-block text-block">
+                            <h3 class="text-block__title">Favorites</h3>
+                        </div>
+                        <div class="favorites__seasons seasons">
+                            <h4 class="seasons__title">Pick favorites of season</h4>
+                            <ul class="seasons__list">
+                                <li class="seasons__item">
+                                    <label for="winter">
+                                        <input type="radio" id="winter">
+                                        Winter
+                                    </label>
+                                </li>
+                                <li class="seasons__item">
+                                    <input type="radio" id="spring">
+                                    <label for="spring">Spring</label>
+                                </li>
+                                <li class="seasons__item">
+                                    <input type="radio" id="summer">
+                                    <label for="summer">Summer</label>
+                                </li>
+                                <li class="seasons__item">
+                                    <input type="radio" id="autumn">
+                                    <label for="autumn">Autumn</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="favorites__book-block book-block">
+                            <div class="book-block__item">
+                                <div class="book-block__content">
+                                    <div class="book-block__body">
+                                        <h4 class="book-block__text">Staff Picks</h4>
+                                        <h2 class="book-block__title">The Book Eaters</h2>
+                                        <h3 class="book-block__subtitle">By Sunyi Dean</h3>
+                                        <p class="book-block__description">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                                        <button class="book-block__btn">Buy</button>
+                                    </div>
+                                    <img src="book1.png" alt="book1">
+                                </div>
+                            </div>
+                            <div class="book-block__item">
+                                <div class="book-block__content">
+                                    <div class="book-block__body">
+                                        <h4 class="book-block__text">Staff Picks</h4>
+                                        <h2 class="book-block__title">Cackle</h2>
+                                        <h3 class="book-block__subtitle">By Rachel Harrison</h3>
+                                        <p class="book-block__description">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+                                        <button class="book-block__btn">Buy</button>
+                                    </div>
+                                    <img src="book2.jpg" alt="book1">
+                                </div>
+                            </div>
+                            <div class="book-block__item">
+                                <div class="book-block__content">
+                                    <div class="book-block__body">
+                                        <h4 class="book-block__text">Staff Picks</h4>
+                                        <h2 class="book-block__title">Dante: Poet of the Secular World</h2>
+                                        <h3 class="book-block__subtitle">By Erich Auerbach</h3>
+                                        <p class="book-block__description">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+                                        <button class="book-block__btn">Buy</button>
+                                    </div>
+                                    <img src="book3.jpg" alt="book1">
+                                </div>
+                            </div>
+                            <div class="book-block__item">
+                                <div class="book-block__content">
+                                    <div class="book-block__body">
+                                        <h4 class="book-block__text">Staff Picks</h4>
+                                        <h2 class="book-block__title">The Last Queen</h2>
+                                        <h3 class="book-block__subtitle">By Clive Irving</h3>
+                                        <p class="book-block__description">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+                                        <button class="book-block__btn">Buy</button>
+                                    </div>
+                                    <img src="book4.jpg" alt="book1">
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </section>
+                <section id="shop" class="page__shop shop">
+                    <div class="shop__container _container">
+                        <div class="shop__body">
+                            <div class="shop__text-block text-block">
+                                <h2 class="text-block__title">Coffee shop</h2>
+                                <p class="text-block__subtitle">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+                                    you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+                            </div>
+                            <div class="shop__content">
+                                <div class="shop__coffee coffee">
+                                    <h3 class="coffee__title">Coffee & Tea</h3>
+                                    <div class="coffee__list">
+                                        <div class="coffee__item">
+                                            <h4 class="coffee__name">Cold Brew Coffee</h4>
+                                            <h4 class="coffee__cost">$3</h4>
+                                        </div>
+                                        <div class="coffee__item">
+                                            <h4 class="coffee__name">French Press Pot</h4>
+                                            <h4 class="coffee__cost">$3</h4>
+                                        </div>
+                                        <div class="coffee__item">
+                                            <h4 class="coffee__name">Espresso</h4>
+                                            <h4 class="coffee__cost">$3</h4>
+                                        </div>
+                                        <div class="coffee__item">
+                                            <h4 class="coffee__name">Cappuccino</h4>
+                                            <h4 class="coffee__cost">$3</h4>
+                                        </div>
+                                        <div class="coffee__item">
+                                            <h4 class="coffee__name">Hot tea</h4>
+                                            <h4 class="coffee__cost">$3</h4>
+                                        </div>
+                                        <div class="coffee__item">
+                                            <h4 class="coffee__name">Cold tea</h4>
+                                            <h4 class="coffee__cost">$3</h4>
                                         </div>
                                     </div>
-                                    <div class="cards-skills__column">
-                                        <div class="cards-skills__item">
-                                            <div class="cards-skills__content _css">CSS</div>
-                                            <h4 class="cards-skills__title">CSS3</h4>
-                                            <p class="cards-skills__subtitle">1.5+ year</p>
+                                </div>
+                                <div class="shop__desserts desserts">
+                                    <h3 class="desserts__title">Desserts & Cakes  </h3>
+                                    <div class="desserts__list">
+                                        <div class="desserts__item">
+                                            <h4 class="desserts__name">Forest Gateau</h4>
+                                            <h4 class="desserts__cost">$16</h4>
                                         </div>
-                                    </div>
-                                    <div class="cards-skills__column">
-                                        <div class="cards-skills__item">
-                                            <div class="cards-skills__content _js">JS</div>
-                                            <h4 class="cards-skills__title">Java Script</h4>
-                                            <p class="cards-skills__subtitle">1.5+ year</p>
+                                        <div class="desserts__item">
+                                            <h4 class="desserts__name">Blue Moon</h4>
+                                            <h4 class="desserts__cost">$16</h4>
                                         </div>
-                                    </div>
-                                    <div class="cards-skills__column">
-                                        <div class="cards-skills__item">
-                                            <div class="cards-skills__content _eng">English</div>
-                                            <h4 class="cards-skills__title">English Language</h4>
-                                            <p class="cards-skills__subtitle">B2 level</p>
+                                        <div class="desserts__item">
+                                            <h4 class="desserts__name">Truffle Cake</h4>
+                                            <h4 class="desserts__cost">$15</h4>
+                                        </div>
+                                        <div class="desserts__item">
+                                            <h4 class="desserts__name">Chocolate Cake</h4>
+                                            <h4 class="desserts__cost">$18</h4>
+                                        </div>
+                                        <div class="desserts__item">
+                                            <h4 class="desserts__name">Poet’s Dream Cake</h4>
+                                            <h4 class="desserts__cost">$16</h4>
+                                        </div>
+                                        <div class="desserts__item">
+                                            <h4 class="desserts__name">Pineapple Cake</h4>
+                                            <h4 class="desserts__cost">$14</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -93,75 +250,57 @@
                         </div>
                     </div>
                 </section>
-                <section class="page__code">
-                    <div class="code__container _container">
-                        <div class="code__body">
-                            <h2 id="code" class="code__title main__title">My code example:</h2>
-                            <code>
-                                if (json.code === '404') { <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;container.style.height = '400px';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;weatherBox.style.display = 'none';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;weatherDetails.style.display = 'none';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;error404.style.display = 'block';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;error404.classList.add('fadeIn');<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;return;<br>
-                                }<br> <br>
-                                
-                                error404.style.display = 'none';<br>
-                                error404.classList.remove('fadeIn');<br> <br>
-                                
-                                const image = document.querySelector('.weather-box img');<br>
-                                const temperature = document.querySelector('.weather-box .temperature');<br>
-                                const description = document.querySelector('.weather-box .description');<br>
-                                const humidity = document.querySelector('.weather-details .humidity span');<br>
-                                const wind = document.querySelector('.weather-details .wind span');<br> <br>
-                                
-                                switch (json.weather[0].main) {<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Clear':<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/clear.png';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
-                                
-                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Rain':<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/rain.png';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
-                                
-                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Snow':<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/snow.png';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
-                                
-                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Clouds':<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/cloud.png';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
-                                
-                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Haze':<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/mist.png';<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
-                                
-                                    &nbsp;&nbsp;&nbsp;&nbsp;default:<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = '';<br>
-                                } <br> <br>
-                                
-                                temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;<br>
-                                description.innerHTML = `${json.weather[0].description}`;<br>
-                                humidity.innerHTML = `${json.main.humidity}%`;<br>
-                                wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;<br> <br>
-                                
-                                weatherBox.style.display = '';<br>
-                                weatherDetails.style.display = '';<br>
-                                weatherBox.classList.add('fadeIn');<br>
-                                weatherDetails.classList.add('fadeIn');<br>
-                                container.style.height = '590px';<br>
-                            </code>
+                <section id="contact" class="page__contact contact">
+                    <div class="contact__container _container">
+                        <div class="contact__text-block text-block">
+                            <h2 class="text-block__title">Our Contacts</h2>
+                        </div>
+                        <div class="contact__body">
+                            <div class="contact__info">
+                                <div class="contact__location location">
+                                    <h4 class="location__title">For all Library inquiries:</h4>
+                                    <ul class="location__phone phone">
+                                        <li class="phone__item">Please call <a type="tel">(617) 730-2370</a></li>
+                                        <li class="phone__item">For TTY service, please call <a type="tel">(617) 730-2370</a></li>
+                                        <li class="phone__item">Putterham Library:<a type="tel">(617) 730-2385</a></li>
+                                    </ul>
+                                </div>
+                                <div class="contact__staff staff">
+                                    <h4 class="staff__title">Senior Staff</h4>
+                                    <p class="staff__subtitle">Library Director: <span>Amanda Hirst</span></p>
+                                </div>
+                            </div>
+                            <div class="contact__map">
+                                <img src="map-img.jpg" alt="map-img">
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section class="page__contact contact">
-                    <div class="contact__container _container">
-                        <div class="contact__body">
-                            <h2 id="contact" class="contact__title main__title">Contact:</h2>
-                            <h4 class="contact__number">Phone Number (GE): +9(955)91-03-8726</h4>
-                            <h4 class="contact__email">e-Mail: aliantsevishmaksim@gmail.com</h4>
-                            <h4 class="contact__telegram">Telegram: fajgd</h4>
+                <section id="card" class="page__card card">
+                    <div class="card__container _container">
+                        <div class="card__text-block text-block">
+                            <h2 class="text-block__title">Digital Library Cards</h2>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__library library-card">
+                                <h3 class="library-card__title">Find your Library card</h3>
+                                <form action="#" class="library-card__form form-card">
+                                    <div class="form-card__body">
+                                        <h4 class="form-card__title">Brooklyn Public Library</h4>
+                                        <input type="text" class="form-card__input" placeholder="Reader's name">
+                                        <input type="text" class="form-card__input" placeholder="Card number">
+                                    </div>
+                                    <button class="form-card__btn">Check the card</button>
+                                </form>
+                            </div>
+                            <div class="card__get get-card">
+                                <h2 class="get-card__title">Get a reader card</h2>
+                                <p class="get-card__subtitle">You will be able to see a reader card after logging into account or you can register a new account</p>
+                                <div class="get-card__buttons">
+                                    <button class="get-card__btn">Sign Up</button>
+                                    <button class="get-card__btn">Log in</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -169,21 +308,45 @@
             <footer class="footer">
                 <div class="footer__container _container">
                     <div class="footer__body">
-                        <div class="footer__text-block">
-                            <h3 class="footer__github">GitHub: <a href="https://github.com/fajgd">https://github.com/fajgd</a></h3>
-                            <h3 class="footer__github">Site link: <a href="https://rs.school/js/">https://rs.school/js/</a></h3>
-                            <h3 class="footer__year">2023</h3>
+                        <div class="footer__content">
+                            <h3 class="footer__location">286 Cadman Plaza, New York, <br> NY 11238, United States</h3>
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="footer__item">
+                                        <img src="twitter-link.svg" alt="twitter-link">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__item">
+                                        <img src="inst-link.svg" alt="inst-link">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__item">
+                                        <img src="facebook-link.svg" alt="facebook-link">
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="footer__img">
-                            <img src="https://rs.school/images/rs_school_js.svg" alt="logo" class="footer__logo">
+                        <div class="footer__days">
+                            Mon - Fri <br>
+                            08:00 am - 07:00 pm <br>
+                            Sat - Sun <br>
+                            10:00 am - 06:00 pm
                         </div>
+                    </div>
+                    <div class="footer__school school">
+                        <h4 class="school__year">2023</h4>
+                        <a href="https://rs.school/js-stage0/" class="school__name">The Rolling Scopes School</a>
+                        <h4 class="school__username">Maksim, My GitHub: <a href="https://github.com/fajgd">https://github.com/fajgd</a></h4>
                     </div>
                 </div>
             </footer>
         </div>
-   
-        <script src="script.js"></script>
-   
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="index.js"></script>
+        
     </body>
    
 </html>
