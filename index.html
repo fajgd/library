@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>My CV</title>
+   
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+   
+    </head>
+   
+    <body>
+   
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container _container">
+                    <div class="header__logo">
+                        <img src="img_max.jpg" alt="header-logo">
+                    </div>
+                    <div class="header_burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu menu-block">
+                        <ul class="menu-block__list">
+                            <li class="menu-block__item">
+                                <a href="#about" class="menu-block__link link_1">About Me</a>
+                            </li>
+                            <li class="menu-block__item">
+                                <a href="#skills" class="menu-block__link link_2">My Skills</a>
+                            </li>
+                            <li class="menu-block__item">
+                                <a href="#code" class="menu-block__link link_3">Code sample</a>
+                            </li>
+                            <li class="menu-block__item">
+                                <a href="#contact" class="menu-block__link link_4">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="page">
+                <section class="page__about about">
+                    <div class="about__container _container">
+                        <div class="about__body">
+                            <h1 class="general__title">My Cv</h1>
+                            <h2 id="about" class="about__title main__title">About Me:</h2>
+                            <p class="about__subtitle main__subtitle">My full name is Aliatnsevich Maksim Dzmitrievic. I’m 16 and I was born in Belarus, currently in Georgia. Into design, books and sport. Open to new expirence and challenges all the time.</p>    
+                        </div>
+                    </div>
+                </section>
+                <section class="page__skills skills">
+                    <div class="skills__container _container">
+                        <div class="skills__body">
+                            <h2 id="skills" class="skills__title main__title">My Skills:</h2>
+                            <div class="skills__cards cards-skills">
+                                <div class="cards-skills__block">
+                                    <div class="cards-skills__column">
+                                        <div class="cards-skills__item">
+                                            <div class="cards-skills__content _html">HTML</div>
+                                            <h4 class="cards-skills__title">HTML5</h4>
+                                            <p class="cards-skills__subtitle">1.5+ year</p>
+                                        </div>
+                                    </div>
+                                    <div class="cards-skills__column">
+                                        <div class="cards-skills__item">
+                                            <div class="cards-skills__content _css">CSS</div>
+                                            <h4 class="cards-skills__title">CSS3</h4>
+                                            <p class="cards-skills__subtitle">1.5+ year</p>
+                                        </div>
+                                    </div>
+                                    <div class="cards-skills__column">
+                                        <div class="cards-skills__item">
+                                            <div class="cards-skills__content _js">JS</div>
+                                            <h4 class="cards-skills__title">Java Script</h4>
+                                            <p class="cards-skills__subtitle">1.5+ year</p>
+                                        </div>
+                                    </div>
+                                    <div class="cards-skills__column">
+                                        <div class="cards-skills__item">
+                                            <div class="cards-skills__content _eng">English</div>
+                                            <h4 class="cards-skills__title">English Language</h4>
+                                            <p class="cards-skills__subtitle">B2 level</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__code">
+                    <div class="code__container _container">
+                        <div class="code__body">
+                            <h2 id="code" class="code__title main__title">My code example:</h2>
+                            <code>
+                                if (json.code === '404') { <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;container.style.height = '400px';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;weatherBox.style.display = 'none';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;weatherDetails.style.display = 'none';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;error404.style.display = 'block';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;error404.classList.add('fadeIn');<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;return;<br>
+                                }<br> <br>
+                                
+                                error404.style.display = 'none';<br>
+                                error404.classList.remove('fadeIn');<br> <br>
+                                
+                                const image = document.querySelector('.weather-box img');<br>
+                                const temperature = document.querySelector('.weather-box .temperature');<br>
+                                const description = document.querySelector('.weather-box .description');<br>
+                                const humidity = document.querySelector('.weather-details .humidity span');<br>
+                                const wind = document.querySelector('.weather-details .wind span');<br> <br>
+                                
+                                switch (json.weather[0].main) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Clear':<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/clear.png';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                
+                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Rain':<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/rain.png';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                
+                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Snow':<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/snow.png';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                
+                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Clouds':<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/cloud.png';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                
+                                    &nbsp;&nbsp;&nbsp;&nbsp;case 'Haze':<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = 'images/mist.png';<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                                
+                                    &nbsp;&nbsp;&nbsp;&nbsp;default:<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image.src = '';<br>
+                                } <br> <br>
+                                
+                                temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;<br>
+                                description.innerHTML = `${json.weather[0].description}`;<br>
+                                humidity.innerHTML = `${json.main.humidity}%`;<br>
+                                wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;<br> <br>
+                                
+                                weatherBox.style.display = '';<br>
+                                weatherDetails.style.display = '';<br>
+                                weatherBox.classList.add('fadeIn');<br>
+                                weatherDetails.classList.add('fadeIn');<br>
+                                container.style.height = '590px';<br>
+                            </code>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__contact contact">
+                    <div class="contact__container _container">
+                        <div class="contact__body">
+                            <h2 id="contact" class="contact__title main__title">Contact:</h2>
+                            <h4 class="contact__number">Phone Number (GE): +9(955)91-03-8726</h4>
+                            <h4 class="contact__email">e-Mail: aliantsevishmaksim@gmail.com</h4>
+                            <h4 class="contact__telegram">Telegram: fajgd</h4>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container _container">
+                    <div class="footer__body">
+                        <div class="footer__text-block">
+                            <h3 class="footer__github">GitHub: <a href="https://github.com/fajgd">https://github.com/fajgd</a></h3>
+                            <h3 class="footer__github">Site link: <a href="https://rs.school/js/">https://rs.school/js/</a></h3>
+                            <h3 class="footer__year">2023</h3>
+                        </div>
+                        <div class="footer__img">
+                            <img src="https://rs.school/images/rs_school_js.svg" alt="logo" class="footer__logo">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+   
+        <script src="script.js"></script>
+   
+    </body>
+   
+</html>
