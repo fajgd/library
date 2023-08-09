@@ -22,26 +22,33 @@
             <header class="header">
                 <div class="header__container _container">
                     <h2 class="header__title">Brooklyn Public Library</h2>
-                    <nav class="header__menu menu-block">
-                        <ul class="menu-block__list">
-                            <li class="menu-block__item">
-                                <a href="#about" class="menu-block__link">About</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#favorites" class="menu-block__link">Favorites</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#shop" class="menu-block__link">Coffee shop</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#contact" class="menu-block__link">Contacts</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#card" class="menu-block__link">Library Card</a>
-                            </li>
-                        </ul>
-                        <img src="profile-img.svg" alt="profile-img">
-                    </nav>
+
+
+                    <div class="header__body">
+                        <nav class="header__menu menu-block">
+                            <ul class="menu-block__list">
+                                <li class="menu-block__item">
+                                    <a href="#about" class="menu-block__link">About</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#favorites" class="menu-block__link">Favorites</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#shop" class="menu-block__link">Coffee shop</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#contact" class="menu-block__link">Contacts</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#card" class="menu-block__link">Library Card</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__user">
+                            <img src="profile-img.svg" alt="profile-img">
+                        </div>
+                        <div class="header__burger"><span></span></div>
+                    </div>
                 </div>
             </header>
             <main class="page">
@@ -75,26 +82,22 @@
                                 </div>
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
-                                        <img src="slider-img3.jpg" alt="slider-img3">
+                                        <img src="islider-img3.jpg" alt="slider-img3">
                                     </div>
                                 </div>
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
                                         <img src="slider-img4.jpg" alt="slider-img4">
-                                    </div>
-                                </div>
+                                  </div>
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
                                         <img src="slider-img5.jpg" alt="slider-img5">
                                     </div>
                                 </div>
-                                <div class="image-slider__slider swiper-slide">
-                                    <div class="image-slider__item">
-                                        <img src="img/slider-img1.jpg" alt="slider-img6">
-                                    </div>
-                                </div>
-                            </div>
+                      
                             <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                     
                         </div>
                     </div>
@@ -338,7 +341,7 @@
                     <div class="footer__school school">
                         <h4 class="school__year">2023</h4>
                         <a href="https://rs.school/js-stage0/" class="school__name">The Rolling Scopes School</a>
-                        <h4 class="school__username">Maksim, My GitHub: <a href="https://github.com/fajgd">https://github.com/fajgd</a></h4>
+                        <a class="school__username" href="https://github.com/fajgd">Maksim</a>
                     </div>
                 </div>
             </footer>
@@ -348,5 +351,4 @@
         <script src="index.js"></script>
         
     </body>
-   
 </html>
