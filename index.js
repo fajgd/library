@@ -1,31 +1,35 @@
+
 new Swiper('.image-slider', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-    slidesPerView: 3,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
     loop: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 3,
+        },
+    },
 })
-console.log(`Вёрстка валидная + 10\nВёрстка семантическая +16\nшесть элементов <section> +2\nтолько один заголовок <h1> +2. Если элементов <h1> на странице больше одного, считаем это ошибкой.\nпять заголовков <h2> +2\nодин элемент <nav> \nдва списка ul > li > a +2.\nсемь кнопок <button> +2.\nдва инпута <input> +2.\nВёрстка соответствует макету +54\nЭлементы меню работают как якоря. При нажатии на один из них нас перебросит наверх соответствующего раздела.\n
-Сами элементы меню при наведении (эффект hover) интерактивны\n
-Расстояние от самого меню до иконки пользователя - 40px.\n
-Текст "Brooklyn Public Library" находится в <h1>.\n
-секция Welcome +4.\n
-секция About +6:\n
-Расстояния между кнопками пагинации 10px.\n
-секция Favorites +8:
-Кнопки имеют структуру input type="radio" + label.\n
-Картинок и описаний - много, для 4х секций.\n
-секция CoffeShop +6.\n
-секция Contacts +6:\n
-секция LibraryCard +8:\n
-"Find your Library card" - это форма с полями input.\n
-Все 3 кнопки должны быть интерактивными, плавно менять свой цвет при наведении на них, как указано в макете styleguides.
-блок <footer> +8:\n
-Общие требования к верстке +20\n
-для построения сетки используются флексы или гриды (display: flex... или display: grid...) +2.\n
-иконки добавлены в формате .svg +2.\n
-изображения добавлены в формате .jpg (.jpeg) или .png +2.\n
-в футере название ссылки Username заменено и ведет на GitHub студента +2.\n
-в футере ссылка The Rolling Scopes School ведет на страницу курса https://rs.school/js-stage0/ +2.\n
-обязательное требование к интерактивности: плавное изменение внешнего вида элемента при наведении и клике не влияет на соседние элементы +2.`)
+
+const body = document.querySelector('body')
+const burger = document.querySelector('.header__burger')
+const menu = document.querySelector('.menu-block')
+burger.addEventListener('click', () => {
+    if (burger.classList.contains('active')) {
+        burger.classList.remove('active')
+        menu.classList.remove('menu-block__active')
+        body.classList.remove('menu__opened')
+    } else {
+        burger.classList.add('active')
+        menu.classList.add('menu-block__active')
+        body.classList.add('menu__opened')
+    }
+})
