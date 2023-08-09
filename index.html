@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     </head>
@@ -22,26 +22,32 @@
             <header class="header">
                 <div class="header__container _container">
                     <h2 class="header__title">Brooklyn Public Library</h2>
-                    <nav class="header__menu menu-block">
-                        <ul class="menu-block__list">
-                            <li class="menu-block__item">
-                                <a href="#about" class="menu-block__link">About</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#favorites" class="menu-block__link">Favorites</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#shop" class="menu-block__link">Coffee shop</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#contact" class="menu-block__link">Contacts</a>
-                            </li>
-                            <li class="menu-block__item">
-                                <a href="#card" class="menu-block__link">Library Card</a>
-                            </li>
-                        </ul>
-                        <img src="/profile-img.svg" alt="profile-img">
-                    </nav>
+
+                    <div class="header__body">
+                        <nav class="header__menu menu-block">
+                            <ul class="menu-block__list">
+                                <li class="menu-block__item">
+                                    <a href="#about" class="menu-block__link">About</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#favorites" class="menu-block__link">Favorites</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#shop" class="menu-block__link">Coffee shop</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#contact" class="menu-block__link">Contacts</a>
+                                </li>
+                                <li class="menu-block__item">
+                                    <a href="#card" class="menu-block__link">Library Card</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__user">
+                            <img src="img/profile-img.svg" alt="profile-img">
+                        </div>
+                        <div class="header__burger"><span></span></div>
+                    </div>
                 </div>
             </header>
             <main class="page">
@@ -52,7 +58,7 @@
                         </div>
                     </div>
                     <div class="_ibg">
-                        <img src="logo-background.png" alt="logo-background">
+                        <img src="img/logo-background.png" alt="logo-background">
                     </div>
                 </section>
                 <section id="about" class="page__about about">
@@ -65,36 +71,34 @@
                             <div class="image-slider__wrapper swiper-wrapper">
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
-                                        <img src="slider-img1.jpg" alt="slider-img1">
+                                        <img src="img/slider-img1.jpg" alt="slider-img1">
                                     </div>
                                 </div>
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
-                                        <img src="slider-img2.jpg" alt="slider-img2">
+                                        <img src="img/slider-img2.jpg" alt="slider-img2">
                                     </div>
                                 </div>
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
-                                        <img src="slider-img3.jpg" alt="slider-img3">
+                                        <img src="img/slider-img3.jpg" alt="slider-img3">
                                     </div>
                                 </div>
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
-                                        <img src="slider-img4.jpg" alt="slider-img1">
+                                        <img src="img/slider-img4.jpg" alt="slider-img1">
                                     </div>
                                 </div>
                                 <div class="image-slider__slider swiper-slide">
                                     <div class="image-slider__item">
-                                        <img src="slider-img5.jpg" alt="slider-img2">
-                                    </div>
-                                </div>
-                                <div class="image-slider__slider swiper-slide">
-                                    <div class="image-slider__item">
-                                        <img src="img/slider-img1.jpg" alt="slider-img3">
+                                        <img src="img/slider-img5.jpg" alt="slider-img2">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                     
                         </div>
                     </div>
@@ -137,7 +141,7 @@
                                         <p class="book-block__description">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
                                         <button class="book-block__btn">Buy</button>
                                     </div>
-                                    <img src="book1.png" alt="book1">
+                                    <img src="img/book1.png" alt="book1">
                                 </div>
                             </div>
                             <div class="book-block__item">
@@ -149,7 +153,7 @@
                                         <p class="book-block__description">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
                                         <button class="book-block__btn">Buy</button>
                                     </div>
-                                    <img src="book2.jpg" alt="book1">
+                                    <img src="img/book2.jpg" alt="book1">
                                 </div>
                             </div>
                             <div class="book-block__item">
@@ -161,7 +165,7 @@
                                         <p class="book-block__description">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
                                         <button class="book-block__btn">Buy</button>
                                     </div>
-                                    <img src="book3.jpg" alt="book1">
+                                    <img src="img/book3.jpg" alt="book1">
                                 </div>
                             </div>
                             <div class="book-block__item">
@@ -173,7 +177,7 @@
                                         <p class="book-block__description">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
                                         <button class="book-block__btn">Buy</button>
                                     </div>
-                                    <img src="book4.jpg" alt="book1">
+                                    <img src="img/book4.jpg" alt="book1">
                                 </div>
                             </div>
                         </div>    
@@ -271,7 +275,7 @@
                                 </div>
                             </div>
                             <div class="contact__map">
-                                <img src="map-img.jpg" alt="map-img">
+                                <img src="img/map-img.jpg" alt="map-img">
                             </div>
                         </div>
                     </div>
@@ -313,17 +317,17 @@
                             <ul class="footer__links">
                                 <li>
                                     <a href="#" class="footer__item">
-                                        <img src="twitter-link.svg" alt="twitter-link">
+                                        <img src="img/twitter-link.svg" alt="twitter-link">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="footer__item">
-                                        <img src="inst-link.svg" alt="inst-link">
+                                        <img src="img/inst-link.svg" alt="inst-link">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="footer__item">
-                                        <img src="facebook-link.svg" alt="facebook-link">
+                                        <img src="img/facebook-link.svg" alt="facebook-link">
                                     </a>
                                 </li>
                             </ul>
@@ -338,15 +342,14 @@
                     <div class="footer__school school">
                         <h4 class="school__year">2023</h4>
                         <a href="https://rs.school/js-stage0/" class="school__name">The Rolling Scopes School</a>
-                        <h4 class="school__username">Maksim, My GitHub: <a href="https://github.com/fajgd">https://github.com/fajgd</a></h4>
+                        <a class="school__username" href="https://github.com/fajgd">Maksim</a>
                     </div>
                 </div>
             </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
         
     </body>
-   
 </html>
